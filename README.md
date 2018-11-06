@@ -1,6 +1,7 @@
 # Travel with us...
 This repo contains a Travel Website where we give the best places to visit for each place.  This  was created using HTML5, CSS3 and JavaScript. It is lightweight and fully responsive. 
-The idea behind this Website was because I needed a project for my Ai1 class, so I tought in something that I would use, and there it is **Travel with us...**.  
+The idea behind this Website was because I needed a project for my Ai1 class, so I tought in something that I would use, and there it is ***Travel with us...***  
+
 To view live, [click here](http://www.diogomarques.tk/)
 ## Task
 ### Objectives
