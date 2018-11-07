@@ -31,5 +31,6 @@ To view live, [click here](http://www.diogomarques.tk/)
   4. Give a good amount of options for the client
 * Which are the dominant colors from the website?
   * Contrast between dark-colors and white text-color.
-  * Have a lot of images representative of the city and/or the places of interest in it.
+  * Have a lot of images representative of the city and/or the places of interest in it.  
+
 *Project by ***Diogo Marques****
