@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Amatic+SC"
+      rel="stylesheet"
+    />
+    <title>Travel With Us</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js"></script>
-  <title>Travel With Us</title>
-</head>
-
-<body>
-  <nav>
-    <div id="mySidenav" class="sidenav">
-      <a href="about.html">About</a>
-      <a href="cities.html">Cities</a>
-      <a href="our_top.html">Our Top</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </nav>
-  <div id="main">
-    <span style="font-size:30px;cursor:pointer" onclick="sideMenu()">&#9776; </span>
-  </div>
-</body>
-
+  <body>
+    <header>
+      <h1>Travel With Us</h1>
+      <input id="burger" type="checkbox" />
+      <label for="burger"> <span></span> <span></span> <span></span> </label>
+      <nav>
+        <ul>
+          <li><a href="#">Lisbon</a></li>
+          <li><a href="#">Madrid</a></li>
+          <li><a href="#">New York</a></li>
+          <li><a href="#">London</a></li>
+          <li><a href="#">Tokyo</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="slideshow" class="fade"><p id="text">Tokyo</p></section>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
 </html>
