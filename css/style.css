@@ -127,6 +127,7 @@ header input:checked ~ nav > ul > li {
 section {
   min-height: 100vh;
   width: 100%;
+  padding: 0;
 }
 
 #slideshow {
@@ -170,24 +171,28 @@ section {
   transition: opacity 0.25s ease-out;
 }
 
-#tiles .tile .tiles-text {
+#tiles .tile p {
   font-size: 2.5vw;
   position: absolute;
-  bottom: 40px;
-  left: 80px;
+  background: #708090;
+  color: white;
   padding: 5%;
+}
+#tiles .tile #london_tiles,
+#lisboa_tiles,
+#madrid_tiles,
+#tokyo_tiles {
+  bottom: 40px;
+  left: 25%;
 }
 
 #tiles .tile #newyork_tiles {
-  position: absolute;
   bottom: 40px;
-  font-size: 2.5vw;
-  left: 40px;
-  padding: 5%;
+  left: 15%;
 }
 
-#tiles .tile #newyork_tiles:hover {
-  background-color: white;
+#tiles .tile p:hover {
+  background-color: #000000;
   transition: 1s ease-out;
 }
 
