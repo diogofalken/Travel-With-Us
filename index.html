@@ -26,17 +26,40 @@
       <label for="burger"> <span></span> <span></span> <span></span> </label>
       <nav>
         <ul>
-          <li><a href="#">Lisbon</a></li>
-          <li><a href="#">Madrid</a></li>
-          <li><a href="#">New York</a></li>
-          <li><a href="#">London</a></li>
-          <li><a href="#">Tokyo</a></li>
+          <li><a id="cidades_nav" href="#">Lisbon</a></li>
+          <li><a id="cidades_nav" href="#">Madrid</a></li>
+          <li><a id="cidades_nav" href="#">New York</a></li>
+          <li><a id="cidades_nav" href="#">London</a></li>
+          <li><a id="cidades_nav" href="#">Tokyo</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section id="slideshow" class="fade"><p id="text">Tokyo</p></section>
+      <section id="slideshow"><p id="text">Tokyo</p></section>
+      <section id="tiles">
+        <div class="tile">
+          <img src="images/newyork.jpeg" alt="newyork" />
+          <p id="newyork_tiles">New York</p>
+        </div>
+        <div class="tile">
+          <img src="images/tokyo.jpeg" alt="tokyo" />
+          <p class="tiles-text">Tokyo</p>
+        </div>
+        <div class="tile">
+          <img src="images/london.jpeg" alt="london" />
+          <p class="tiles-text">London</p>
+        </div>
+        <div class="tile">
+          <img src="images/lisboa.jpeg" alt="lisboa" />
+          <p class="tiles-text">Lisboa</p>
+        </div>
+        <div class="tile">
+          <img src="images/madrid.jpeg" alt="madrid" />
+          <p class="tiles-text">Madrid</p>
+        </div>
+      </section>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
