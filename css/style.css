@@ -2,8 +2,8 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
-
 /* ---------------- Header ----------------*/
 header {
   width: 100%;
@@ -150,9 +150,65 @@ section {
   text-shadow: 4px 4px 1px #343a40;
 }
 
+#section04 {
+  position: absolute;
+  top: 80%;
+}
+
+#section04 a {
+  text-decoration: none;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: whitesmoke;
+  text-shadow: 4px 4px 1px #343a40;
+  position: absolute;
+  padding-top: 60px;
+  left: 45%;
+}
+
+#section04 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 3px solid whitesmoke;
+  border-bottom: 3px solid whitesmoke;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: next_section 2s infinite;
+  animation: next_section 2s infinite;
+  /*box-sizing: border-box;*/
+}
+
+@-webkit-keyframes next_section {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+}
+@keyframes next_section {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+}
+
 /* Tiles */
 #tiles {
   width: 100%;
+  position: relative;
 }
 
 #tiles .tile {
@@ -175,6 +231,7 @@ section {
   font-size: 2.5vw;
   position: absolute;
   background: #708090;
+  opacity: 0.8;
   color: white;
   padding: 5%;
 }
@@ -182,18 +239,18 @@ section {
 #lisboa_tiles,
 #madrid_tiles,
 #tokyo_tiles {
-  bottom: 40px;
+  bottom: 40%;
   left: 25%;
 }
 
 #tiles .tile #newyork_tiles {
-  bottom: 40px;
+  bottom: 40%;
   left: 15%;
 }
 
 #tiles .tile p:hover {
   background-color: #000000;
-  transition: 1s ease-out;
+  transition: 0.25s ease-out;
 }
 
 #tiles .tile img:hover {
