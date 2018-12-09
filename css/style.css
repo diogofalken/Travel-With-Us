@@ -262,3 +262,11 @@ footer {
   width: 100%;
   text-align: center;
 }
+
+footer p {
+  font-size: 2vw;
+  margin: 0;
+  font-weight: 900;
+  font-family: "Amatic SC", cursive;
+  text-transform: uppercase;
+}
