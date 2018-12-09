@@ -256,3 +256,9 @@ section {
 #tiles .tile img:hover {
   opacity: 0.6;
 }
+
+/* Footer */
+footer {
+  width: 100%;
+  text-align: center;
+}
