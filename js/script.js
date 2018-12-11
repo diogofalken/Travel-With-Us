@@ -1,3 +1,4 @@
+window.onscroll = toogleScrollButton;
 /* ---------------- SlideShow ---------------- */
 var i = 1;
 var slide = document.getElementById("slideshow");
@@ -17,11 +18,11 @@ function slideshow() {
   }
   slide.style.backgroundImage = "url(" + images[i] + ")";
   slide_text.innerHTML = text[i];
-  slide.style.transition = "opacity 1s ease-out";
   i++;
+
   setTimeout("slideshow()", 3000);
 }
-
+slideshow();
 /* Footer Date */
 function time() {
   var date = new Date();
@@ -30,25 +31,39 @@ function time() {
   var segundos = date.getSeconds();
   minutos = checkTime(minutos);
   segundos = checkTime(segundos);
-
+  function checkTime(i) {
+    if (i < 10) {
+      i = "0" + i;
+    } // adiciona zero na esquerda dos numeros < 10
+    return i;
+  }
   document.getElementById("hora").innerHTML =
     horas + ":" + minutos + ":" + segundos;
   var t = setTimeout(time, 500);
 }
+time();
 
-function checkTime(i) {
-  if (i < 10) {
-    i = "0" + i;
-  } // adiciona zero na esquerda dos numeros < 10
-  return i;
+/* Scroll Top */
+function toogleScrollButton() {
+  if (
+    document.body.scrollTop > window.innerHeight / 2 ||
+    document.documentElement.scrollTop > window.innerHeight / 2
+  ) {
+    showScrollButton();
+  } else {
+    hideScrollButton();
+  }
 }
 
-// Visto que nao existe maneira de ter duas funcoes a dar window.load ao mesmo tempo tive de fazer esta funcao
-window.onload = slideshow;
-var current = window.onload;
-window.onload = function() {
-  if (current) {
-    current();
-  }
-  time();
-};
+function ScrollToTop() {
+  document.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+function showScrollButton() {
+  document.getElementById("scrollTop").style.opacity = 1;
+}
+
+function hideScrollButton() {
+  document.getElementById("scrollTop").style.opacity = 0;
+}
