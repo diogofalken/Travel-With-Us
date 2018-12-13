@@ -14,8 +14,19 @@ function time() {
     } // adiciona zero na esquerda dos numeros < 10
     return i;
   }
+
   document.getElementById("hora").innerHTML =
-    horas + ":" + minutos + ":" + segundos;
+    date.getDay() +
+    "/" +
+    date.getMonth() +
+    "/" +
+    date.getFullYear() +
+    " " +
+    horas +
+    ":" +
+    minutos +
+    ":" +
+    segundos;
   var t = setTimeout(time, 500);
 }
 time();
