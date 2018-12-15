@@ -11,11 +11,11 @@
 }
 
 #image2 {
-  background-image: url("../images/Lisbon_Page/monument_of_discoveries.jpg");
+  background-image: url("../images/Lisbon_Page/lisboa2.jpeg");
 }
 
 #image3 {
-  background-image: url("../images/Lisbon_Page/nation_park.jpeg");
+  background-image: url("../images/Lisbon_Page/lisboa3.jpeg");
 }
 
 #image1,
@@ -27,7 +27,7 @@
   top: 0;
   left: 0;
   right: 0;
-  background-position: top center;
+  background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
