@@ -2,6 +2,8 @@ header input ~ nav {
   background: rgb(255, 255, 255, 1);
 }
 
+/* ------------------- Page Showcase ------------------- */
+
 #showcase_page {
   display: block;
   height: 50vh;
@@ -67,10 +69,12 @@ header input ~ nav {
   }
 }
 
+/* ------------------- Text Info ------------------- */
 #info {
   width: 75%;
   margin: 25px auto 0 auto;
   text-align: justify;
+  position: relative;
 }
 
 #info h2,
@@ -80,4 +84,13 @@ h4 {
 
 #info h4 {
   font-weight: 100;
+}
+
+#info #more {
+  display: none;
+}
+
+#info #read-more {
+  color: blue;
+  cursor: pointer;
 }
