@@ -1,0 +1,58 @@
+/* ------------------- Page Showcase ------------------- */
+
+#showcase_page {
+  display: block;
+  height: 50vh;
+  margin: 100px auto 1rem auto;
+  position: relative;
+}
+#image1 {
+  background-image: url("../images/Lisbon_Page/lisboa.jpeg");
+}
+
+#image2 {
+  background-image: url("../images/Lisbon_Page/monument_of_discoveries.jpg");
+}
+
+#image3 {
+  background-image: url("../images/Lisbon_Page/nation_park.jpeg");
+}
+
+#image1,
+#image2,
+#image3 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  animation: slideshow 12s linear 0s infinite;
+}
+
+#image2 {
+  animation-delay: 4s;
+}
+
+#image3 {
+  animation-delay: 8s;
+}
+
+@keyframes slideshow {
+  25% {
+    opacity: 1;
+  }
+  33.33% {
+    opacity: 0;
+  }
+  91.66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
