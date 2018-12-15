@@ -1,36 +1,21 @@
-header input ~ nav {
-  background: rgb(255, 255, 255, 1);
-}
-
 /* ------------------- Page Showcase ------------------- */
 
 #showcase_page {
   display: block;
   height: 50vh;
-  width: 75%;
   margin: 100px auto 1rem auto;
   position: relative;
 }
 #image1 {
   background-image: url("../images/Tokyo_Page/skytree_page_slideshow.jpg");
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
+
 #image2 {
   background-image: url("../images/Tokyo_Page/tokyo_page_slideshow.jpg");
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
+
 #image3 {
   background-image: url("../images/Tokyo_Page/zojoji_page_slideshow.jpeg");
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 #image1,
@@ -43,6 +28,10 @@ header input ~ nav {
   top: 0;
   left: 0;
   right: 0;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   animation: slideshow 12s linear 0s infinite;
 }
 
@@ -67,30 +56,4 @@ header input ~ nav {
   100% {
     opacity: 1;
   }
-}
-
-/* ------------------- Text Info ------------------- */
-#info {
-  width: 75%;
-  margin: 25px auto 0 auto;
-  text-align: justify;
-  position: relative;
-}
-
-#info h2,
-h4 {
-  line-height: 0.2;
-}
-
-#info h4 {
-  font-weight: 100;
-}
-
-#info #more {
-  display: none;
-}
-
-#info #read-more {
-  color: blue;
-  cursor: pointer;
 }
