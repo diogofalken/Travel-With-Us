@@ -7,15 +7,15 @@
   position: relative;
 }
 #image1 {
-  background-image: url("../images/Lisbon_Page/lisboa.jpeg");
+  background-image: url("../images/newyork.jpeg");
 }
 
 #image2 {
-  background-image: url("../images/Lisbon_Page/monument_of_discoveries.jpg");
+  background-image: url("../images/NewYork_Page/theatredistrict.jpeg");
 }
 
 #image3 {
-  background-image: url("../images/Lisbon_Page/nation_park.jpeg");
+  background-image: url("../images/NewYork_Page/centralpark.jpeg");
 }
 
 #image1,
