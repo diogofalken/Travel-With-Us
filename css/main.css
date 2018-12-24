@@ -153,6 +153,8 @@ header input:checked ~ nav > ul > li {
 footer {
   width: 100%;
   text-align: center;
+  position: relative;
+  background-color: white;
 }
 
 footer p {
