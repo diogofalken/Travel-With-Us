@@ -27,7 +27,7 @@ function time() {
     minutos +
     ":" +
     segundos;
-  var t = setTimeout(time, 500);
+  var t = setTimeout(time, 1000);
 }
 time();
 

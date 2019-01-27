@@ -140,10 +140,11 @@ section {
 /* ABOUT */
 section #about {
   width: 100%;
-  margin: 0;
+  margin: auto;
 }
 
 section #about #main-text {
+  margin-top: 10%;
   font-size: 1rem;
   text-align: center;
 }
@@ -155,31 +156,35 @@ section #about #main-text p {
   font-family: "Amatic SC", cursive;
 }
 
-section #about #box_help {
+section #about .box_help {
   color: white;
   width: 35%;
-  margin: 20px auto;
-  background-color: white;
+  margin: 40px auto;
   border-radius: 0.5rem;
   padding: 1rem 2rem;
-  font-size: 1rem;
-  letter-spacing: 4px;
+  font-size: 1.2rem;
   box-shadow: 12px 16px 35px 0px rgba(0, 0, 0, 0.3);
   transition: box-shadow 150ms linear, background-color 150ms linear,
     transform 150ms linear;
 }
 
-section #about #box_help:hover {
+section #about .box_help:hover {
   transform: scale(0.98);
   background-color: darken(white, 10%);
   box-shadow: 6px 8px 8px 0px rgba(0, 0, 0, 0.3);
 }
 
-section #about #box_help:first-child {
+section #about .box_help:first-child {
   margin-top: 30px;
 }
 
-section #about #box_help p {
+section #about .box_help p {
   color: black;
   text-align: center;
+}
+
+section #about .box_help:last-child {
+  background-color:#007BFF;
+  width: 15%;
+  cursor: pointer;
 }
