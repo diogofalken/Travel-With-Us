@@ -1,15 +1,24 @@
 /* ---------------- SlideShow ---------------- */
-var slideIndex = 0;
-showSlides();
+var i = 1;
+var slide = document.getElementById("slideshow");
+var slide_text = document.getElementById("text");
+var images = [
+  "../images/tokyo.jpeg",
+  "../images/madrid.jpeg",
+  "../images/newyork.jpeg",
+  "../images/lisboa.jpeg",
+  "../images/london.jpeg"
+];
+var text = ["Tokyo", "Madrid", "New York", "Lisbon", "London"];
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none"; 
+function slideshow() {
+  if (i == 5) {
+    i = 0;
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1} 
-  slides[slideIndex-1].style.display = "block"; 
-  setTimeout(showSlides, 5000);
+  slide.style.backgroundImage = "url(" + images[i] + ")";
+  slide_text.innerHTML = text[i];
+  i++;
+
+  setTimeout("slideshow()", 3000);
 }
+slideshow();
