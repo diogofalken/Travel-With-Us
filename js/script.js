@@ -1,35 +1,18 @@
 window.onscroll = toogleScrollButton;
 
 /* Footer Date */
-function time() {
-  var date = new Date();
-  var horas = date.getHours();
-  var minutos = date.getMinutes();
-  var segundos = date.getSeconds();
-  minutos = checkTime(minutos);
-  segundos = checkTime(segundos);
-  function checkTime(i) {
-    if (i < 10) {
-      i = "0" + i;
-    } // adiciona zero na esquerda dos numeros < 10
-    return i;
-  }
+setInterval(function () {
+	var data = new Date();
+	document.querySelector("#hora").innerHTML = addZero(data.getDate()) + "/" + addZero(data.getMonth() + 1) + "/" + addZero(data.getFullYear()) + "\t" + addZero(data.getHours()) + ":" + addZero(data.getMinutes()) + ":" + addZero(data.getSeconds());
 
-  document.getElementById("hora").innerHTML =
-    date.getDay() +
-    "/" +
-    date.getMonth() +
-    "/" +
-    date.getFullYear() +
-    " " +
-    horas +
-    ":" +
-    minutos +
-    ":" +
-    segundos;
-  var t = setTimeout(time, 1000);
-}
-time();
+	/* Adds 0 (zero) if < 10 */
+	function addZero(number) {
+		if (number < 10) {
+			return "0" + number;
+		}
+		return number.toString();
+	}
+}, 1000);
 
 /* Scroll Top */
 function toogleScrollButton() {

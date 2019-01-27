@@ -25,14 +25,14 @@ section {
   text-shadow: 4px 4px 1px #343a40;
 }
 
-#section04 {
+#scroll_down {
   position: absolute;
   width: 100%;
   text-align: center;
   top: 80%;
 }
 
-#section04 a {
+#scroll_down a {
   text-decoration: none;
   font-weight: 900;
   text-transform: uppercase;
@@ -46,7 +46,7 @@ section {
   padding: 60px 0 0 0;
 }
 
-#section04 a span {
+#scroll_down a span {
   position: absolute;
   top: 0;
   left: 50%;
@@ -99,7 +99,7 @@ section {
 }
 
 #tiles .tile img {
-  height: 100vh;
+  height: 50vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -137,6 +137,10 @@ section {
   display: block;
 }
 
+#tiles .tile p:hover{
+  display: block;
+}
+
 /* ABOUT */
 section #about {
   width: 100%;
@@ -144,7 +148,7 @@ section #about {
 }
 
 section #about #main-text {
-  margin-top: 10%;
+  margin-top: 20%;
   font-size: 1rem;
   text-align: center;
 }

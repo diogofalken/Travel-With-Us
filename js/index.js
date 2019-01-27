@@ -22,3 +22,7 @@ function slideshow() {
   setTimeout("slideshow()", 3000);
 }
 slideshow();
+
+$("#cities_button").click(function() {
+  $("input").prop('checked', true);
+});
