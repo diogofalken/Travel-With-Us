@@ -1,107 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <script src="js/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-      crossorigin="anonymous"
-    />
-    
-    <script src="js/jquery.js"></script>
-    <title>Travel With Us</title>
-  </head>
 
-  <body>
-    <header>
-      <h1><a href="index.html"> Travel With Us</a></h1>
-      <input id="burger" type="checkbox" />
-      <label for="burger"> <span></span> <span></span> <span></span> </label>
-      <nav>
-        <ul>
-          <li><a id="cidades_nav" href="lisbon.html">Lisbon</a></li>
-          <li><a id="cidades_nav" href="madrid.html">Madrid</a></li>
-          <li><a id="cidades_nav" href="newyork.html">New York</a></li>
-          <li><a id="cidades_nav" href="london.html">London</a></li>
-          <li><a id="cidades_nav" href="tokyo.html">Tokyo</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <!--<section id="slideshow">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous" />
+
+  <script src="js/jquery.js"></script>
+  <title>Travel With Us</title>
+</head>
+
+<body>
+  <header>
+    <h1><a href="index.html"> Travel With Us</a></h1>
+    <input id="burger" type="checkbox" />
+    <label for="burger"> <span></span> <span></span> <span></span> </label>
+    <nav>
+      <ul>
+        <li><a id="cidades_nav" href="lisbon.html">Lisbon</a></li>
+        <li><a id="cidades_nav" href="madrid.html">Madrid</a></li>
+        <li><a id="cidades_nav" href="newyork.html">New York</a></li>
+        <li><a id="cidades_nav" href="london.html">London</a></li>
+        <li><a id="cidades_nav" href="tokyo.html">Tokyo</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <section>
+      <div id="slideshow">
+        <img class="slides" src="images/tokyo.jpeg" alt="Tokyo">
+        <img class="slides" src="images/madrid.jpeg" alt="Madrid">
+        <img class="slides" src="images/newyork.jpeg" alt="New York">
+        <img class="slides" src="images/lisboa.jpeg" alt="Lisbon">
+        <img class="slides" src="images/london.jpeg" alt="London">
         <p id="text">Tokyo</p>
         <section id="scroll_down" class="demo">
           <a href="#main-text"><span></span>Scroll</a>
-        </section>-->
-        <section>
-          <div id="slideshow">
-            <img class="slides" src="images/tokyo.jpeg" alt="Tokyo">
-            <img class="slides" src="images/madrid.jpeg" alt="Madrid">
-            <img class="slides" src="images/newyork.jpeg" alt="New York">
-            <img class="slides" src="images/lisboa.jpeg" alt="Lisbon">
-            <img class="slides" src="images/london.jpeg" alt="London">
-            <p id="text">Tokyo</p>
-          </div>
         </section>
-      </section>
-      <section>
-        <div id="about">
-          <div id="main-text"><p>You can travel with...</p></div>
+      </div>
+    </section>
+    </section>
+    <section>
+      <div id="about">
+        <div id="main-text">
+          <p>You can travel with...</p>
+        </div>
 
-          <div class="box_help"><p>Lowest Prices</p></div>
-          <div class="box_help"><p>Best Places</p></div>
-          <div class="box_help"><p>Best Food</p></div>
-          <div class="box_help"><p>With Low Effort</p></div>
-          <div class="box_help" id="cities_button"><p style="color: #F8F9FA">Our Cities</p></div>
+        <div class="box_help">
+          <p>Lowest Prices</p>
         </div>
-      </section>
-      <div id="tiles">
-        <div class="tile">
-          <a href="newyork.html">
-              <img src="images/newyork_hover.jpeg" alt="newyork" />
-              <p id="newyork_tiles">New York</p>
-          </a>
+        <div class="box_help">
+          <p>Best Places</p>
         </div>
-        <div class="tile">
-          <a href="tokyo.html">
-              <img src="images/tokyo_hover.jpeg" alt="tokyo" />
-              <p id="tokyo_tiles">Tokyo</p>
-          </a>
+        <div class="box_help">
+          <p>Best Food</p>
         </div>
-        <div class="tile">
-          <a href="london.html">
-              <img src="images/london_hover.jpeg" alt="london" />
-              <p id="london_tiles">London</p>
-          </a>
+        <div class="box_help">
+          <p>With Low Effort</p>
         </div>
-        <div class="tile">
-          <a href="lisbon.html">
-              <img src="images/lisbon_hover.jpeg" alt="lisbon" />
-              <p id="lisboa_tiles">Lisbon</p>
-          </a>
-        </div>
-        <div class="tile">
-          <a href="madrid.html">
-              <img src="images/madrid_hover.jpeg" alt="madrid" />
-              <p id="madrid_tiles">Madrid</p>
-          </a>
+        <div class="box_help" id="cities_button">
+          <p style="color: #F8F9FA">Our Cities</p>
         </div>
       </div>
-    </main>
-    <div id="scrollTop" onclick="ScrollToTop()">
-      <i class="fas fa-chevron-circle-up fa-3x"></i>
+    </section>
+    <div id="tiles">
+      <div class="tile">
+        <a href="newyork.html">
+          <img src="images/newyork_hover.jpeg" alt="newyork" />
+          <p id="newyork_tiles">New York</p>
+        </a>
+      </div>
+      <div class="tile">
+        <a href="tokyo.html">
+          <img src="images/tokyo_hover.jpeg" alt="tokyo" />
+          <p id="tokyo_tiles">Tokyo</p>
+        </a>
+      </div>
+      <div class="tile">
+        <a href="london.html">
+          <img src="images/london_hover.jpeg" alt="london" />
+          <p id="london_tiles">London</p>
+        </a>
+      </div>
+      <div class="tile">
+        <a href="lisbon.html">
+          <img src="images/lisbon_hover.jpeg" alt="lisbon" />
+          <p id="lisboa_tiles">Lisbon</p>
+        </a>
+      </div>
+      <div class="tile">
+        <a href="madrid.html">
+          <img src="images/madrid_hover.jpeg" alt="madrid" />
+          <p id="madrid_tiles">Madrid</p>
+        </a>
+      </div>
     </div>
-    <footer>
-      <p>Travel With Us</p>
-      <p id="hora"></p>
-    </footer>
-    <script src="js/index.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+  </main>
+  <div id="scrollTop" onclick="ScrollToTop()">
+    <i class="fas fa-chevron-circle-up fa-3x"></i>
+  </div>
+  <footer>
+    <p>Travel With Us</p>
+    <p id="hora"></p>
+  </footer>
+  <script src="js/index.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
