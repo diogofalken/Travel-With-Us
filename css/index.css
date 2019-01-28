@@ -6,11 +6,14 @@ section {
 }
 
 #slideshow {
-  background-position: center;
-  background-repeat: no-repeat;
+  width: 100%;
+}
+
+section #slideshow .slides {
+  width: 100%;
+  min-height: 100vh;
+  display: none;
   background-size: cover;
-  background-attachment: fixed;
-  transition: 0.5s;
 }
 
 #text {
