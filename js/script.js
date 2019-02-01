@@ -5,7 +5,7 @@ setInterval(function () {
 	var data = new Date();
 	document.querySelector("#hora").innerHTML = addZero(data.getDate()) + "/" + addZero(data.getMonth() + 1) + "/" + addZero(data.getFullYear()) + "\t" + addZero(data.getHours()) + ":" + addZero(data.getMinutes()) + ":" + addZero(data.getSeconds());
 
-	/* Adds 0 (zero) if < 10 */
+	/* Adiciona 0 se for menor que 10 */
 	function addZero(number) {
 		if (number < 10) {
 			return "0" + number;

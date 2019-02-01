@@ -11,9 +11,8 @@ section {
 
 section #slideshow .slides {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   display: none;
-  background-size: cover;
 }
 
 #text {
@@ -175,12 +174,6 @@ section #about .box_help {
     transform 150ms linear;
 }
 
-section #about .box_help:hover {
-  transform: scale(0.98);
-  background-color: darken(white, 10%);
-  box-shadow: 6px 8px 8px 0px rgba(0, 0, 0, 0.3);
-}
-
 section #about .box_help:first-child {
   margin-top: 30px;
 }
@@ -194,4 +187,10 @@ section #about .box_help:last-child {
   background-color:#007BFF;
   width: 15%;
   cursor: pointer;
+}
+
+section #about .box_help:last-child:hover {
+  transform: scale(0.98);
+  background-color: darken(white, 10%);
+  box-shadow: 6px 8px 8px 0px rgba(0, 0, 0, 0.3);
 }
